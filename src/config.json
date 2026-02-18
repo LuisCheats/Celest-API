@@ -1,14 +1,14 @@
 {
   "settings": {
-    "creator": "Danzz",
-    "apiName": "KuroNeko",
-    "description": "A free and reliable API service designed for modern application development. Built with Node.js and TypeScript, delivering fast performance, stable endpoints, and easy integration.",
+    "creator": "7Noonly",
+    "apiName": "Celest",
+    "description": "Un servicio API gratuito y confiable diseñado para el desarrollo de aplicaciones modernas. Creado con Node.js y TypeScript, ofrece un rendimiento rápido, puntos finales estables y una fácil integración.",
     "apiVersion": "v1.0",
     "visitors": "0",
     "favicon": "/src/danzz.jpg",
-    "thumbnail": "/src/thumbnail.jpg",
-    "channelUrl": "https://whatsapp.com/channel/0029VbBQG1n3QxRsqN7XkS06",
-    "github": "https://github.com/DanzzAraAra"
+    "thumbnail": "/src/7noonly.jpg",
+    "channelUrl": "https://whatsapp.com/channel/0029VbBJZs5G8l5EwrjizJ2H",
+    "github": "https://github.com/LuisCheats"
   },
   "tags": {
     "ai": [
