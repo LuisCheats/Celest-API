@@ -3,25 +3,19 @@ import { Request, Response } from 'express';
 export default async function waifuHandler(req: Request, res: Response) {
     try {
         const apiResponse = await fetch("https://api.waifu.pics/sfw/waifu");
+        if (!apiResponse.ok) throw new Error("No se pudieron obtener los datos");
         
-        if (!apiResponse.ok) {
-            throw new Error(`Waifu API error: ${apiResponse.status}`);
-        }
+        const json: any = await apiResponse.json();
         
-        const data = await apiResponse.json() as { url: string };
+        const imageResponse = await fetch(json.url);
+        const arrayBuffer = await imageResponse.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
         
-        // Formato exacto que pediste
-        res.json({
-            url: data.url
-        });
-        
-    } catch (error) {
+        res.set('Content-Type', 'image/png');
+        res.send(buffer);
+
+    } catch (error: any) {
         console.error("Error waifu:", error);
-        
-        // En caso de error, también devolvemos solo "url" (vacío o mensaje)
-        res.status(500).json({
-            url: null
-            // o si prefieres: url: "error al obtener waifu"
-        });
+        res.status(500).json({ status: false, message: "Internal Server Error" });
     }
-}
+};
