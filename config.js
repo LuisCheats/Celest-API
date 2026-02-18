@@ -14,7 +14,7 @@
 
 
 // token de seu Cluster do mongoDb(deixei esse padrao pra vcs, mas recomendo mudar isso)
-const token = "mongodb+srv://7Noonly:7Noonly@cluster0.vnqidrx.mongodb.net/?appName=Cluster0"
+const token = "mongodb+srv://clover:clover@cluster0.v5krqss.mongodb.net/?appName=Cluster0"
 
 // foto inicial  do usuario
 const ft = "https://telegra.ph/file/87fe9fdbf08280460e531.jpg";
