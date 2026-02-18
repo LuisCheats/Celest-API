@@ -14,7 +14,7 @@
 
 
 // token de seu Cluster do mongoDb(deixei esse padrao pra vcs, mas recomendo mudar isso)
-const token = "mongodb+srv://clover:clover@cluster0.v5krqss.mongodb.net/?appName=Cluster0";
+const token = "mongodb+srv://7Noonly:7Noonly@cluster0.vnqidrx.mongodb.net/?appName=Cluster0"
 
 // foto inicial  do usuario
 const ft = "https://telegra.ph/file/87fe9fdbf08280460e531.jpg";
@@ -26,13 +26,13 @@ const saldo = 50;
 const total = 0;
 
 // nome padrao do insta do novo usuario (me segue no insta 💕)
-const insta = "@r4mon_sant0s"
+const insta = "@lzzin.xyz"
 
 // zap padrao do novo usuario (numero que ta aqui nao existe kkk)
-const zap = "55759865969696"
+const zap = "50765836410"
 
 // youtube ppadrao do novo usuario (se baixou entao ja segue ne?)
-const yt = "youtube.com/@clovermods"
+const yt = "youtube.com/@luischeating"
 
 // wallpaper padrao tbm
 const wallpaper = "https://telegra.ph/file/56fa53ec05377a51311cc.jpg"
